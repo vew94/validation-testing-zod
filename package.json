@@ -1,0 +1,24 @@
+{
+  "name": "validation-testing-zod",
+  "version": "0.0.1",
+  "license": "MIT",
+  "author": "vew94",
+  "type": "module",
+  "scripts": {
+    "doc": "typedoc",
+    "lint": "eslint src",
+    "test": "vitest",
+    "test:coverage": "vitest --coverage"
+  },
+  "dependencies": {
+    "zod": "^3.24.3"
+  },
+  "devDependencies": {
+    "eslint": "^9.25.1",
+    "eslint-plugin-boundaries": "^5.0.1",
+    "temis": "^0.5.0",
+    "typedoc": "^0.28.3",
+    "typescript": "^5.8.3",
+    "vitest": "^3.1.2"
+  }
+}

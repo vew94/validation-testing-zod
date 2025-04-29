@@ -1,0 +1,71 @@
+{
+	"$schema": "https://biomejs.dev/schemas/1.9.4/schema.json",
+  "vcs": {
+    "clientKind": "git",
+    "defaultBranch": "main",
+    "enabled": true,
+    "useIgnoreFile": true
+  },
+	"files": {
+		"ignoreUnknown": false,
+		"ignore": []
+	},
+  "formatter": {
+    "enabled": true,
+    "indentStyle": "space",
+    "useEditorconfig": true
+  },
+	"organizeImports": {
+		"enabled": true
+	},
+	"linter": {
+    "enabled": true,
+    "rules": {
+      "a11y": {},
+      "all": true,
+      "complexity": {},
+      "correctness": {
+        "noUndeclaredDependencies": "off",
+        "useImportExtensions": "off"
+      },
+      "nursery": {},
+      "performance": {},
+      "security": {
+        "noDangerouslySetInnerHtml":"warn"
+      },
+      "style": {
+        "noDefaultExport": "off",
+        "useNamingConvention": "off"
+      },
+      "suspicious": {
+        "noReactSpecificProps": "off"
+      }
+    }
+	},
+  "javascript": {
+    "formatter": {
+      "enabled": true,
+      "quoteStyle": "double"
+    },
+    "globals": [
+      "React"
+    ]
+  },
+  "json": {
+    "formatter": {
+      "enabled": false,
+      "trailingCommas": "none"
+    },
+    "parser": {
+      "allowComments": false
+    }
+  },
+  "css": {
+    "formatter": {
+      "enabled": true
+    },
+    "linter": {
+      "enabled": true
+    }
+  }
+}
