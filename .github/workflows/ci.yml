@@ -53,5 +53,14 @@ jobs:
           cache: "pnpm"
           registry-url: "https://registry.npmjs.org"
 
+      - name: Install dependencies
+        run:  |
+          set -x
+          pnpm install
+
       - name: Run Vitest
-        run: pnpm test --run --no-color
+        run: pnpm vitest --run --no-color --coverage.enabled true
+
+      - name: 'Report Coverage'
+        uses:  davelosert/vitest-coverage-report-action@adec81c7327940e0578d70d0bbdd87b0ca21df55 # v2.8.2
+        if: always()
