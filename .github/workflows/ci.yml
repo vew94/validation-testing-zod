@@ -54,4 +54,4 @@ jobs:
           registry-url: "https://registry.npmjs.org"
 
       - name: Run Vitest
-        run: pnpm vitest --run --no-color
+        run: pnpm test --run --no-color
